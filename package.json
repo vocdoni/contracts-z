@@ -2,13 +2,15 @@
   "name": "@vocdoni/davinci-contracts",
   "version": "0.0.1",
   "description": "Smart contracts powering DAVINCI's digital voting protocol",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "test",
     "src": "src"
   },
   "files": [
-    "typechain-types",
+    "lib",
     "deployed_contracts_addresses.json"
   ],
   "repository": {
@@ -22,6 +24,7 @@
     "prettier": "prettier -c .",
     "prettier:fix": "prettier -w .",
     "typechain": "npx hardhat compile",
+    "prepare": "tsc -b tsconfig.build.json",
     "mythril": "myth a ./src/*.sol --solc-json mythril.config.json",
     "slither": "slither ./src/*.sol"
   },

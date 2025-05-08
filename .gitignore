@@ -2,6 +2,7 @@
 cache_forge/
 cache_hardhat/
 out/
+lib/
 
 # Ignores development broadcast logs
 !/broadcast

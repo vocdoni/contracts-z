@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "typechain-types",
+    "declaration": true,
+    "declarationMap": false,
+    "emitDeclarationOnly": false,
+    "module": "commonjs",
+    "target": "es2019",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["typechain-types/**/*.ts"]
+}
